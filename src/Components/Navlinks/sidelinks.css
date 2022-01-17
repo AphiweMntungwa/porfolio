@@ -1,0 +1,28 @@
+.side-icon {
+    text-align: center;
+    padding: 1em 0;
+    transition: all 1s ease-in-out;
+}
+
+i {
+    font-size: 3.5em;
+    color: gold;
+    transition: all 1s ease-in-out;
+}
+
+nav:hover .side-icon {}
+
+nav:hover i {
+    transform: translateX(1em);
+}
+
+.link {
+    display: none;
+}
+
+
+/* nav:hover .link {
+    display: inline-block;
+    position: absolute;
+    left: 1%;
+} */
