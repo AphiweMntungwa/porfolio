@@ -3,6 +3,7 @@ nav {
     width: 7%;
     height: 100%;
     transition: width .4s .2s ease-in-out;
+    display: inline-block;
 }
 
 nav:hover {
