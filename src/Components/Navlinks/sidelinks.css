@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .side-icon {
     text-align: center;
     padding: 1em 0;
     transition: all 1s ease-in-out;
+    height: 10%;
+}
+
+.side-icon:hover {
+    background-color: white;
+}
+
+.null:hover {
+    background-color: #000c18;
 }
 
 i {
-    font-size: 3.5em;
+    font-size: 2.4em;
     color: gold;
     transition: all 1s ease-in-out;
 }
-
-nav:hover .side-icon {}
 
 nav:hover i {
     transform: translateX(1em);
@@ -18,11 +26,14 @@ nav:hover i {
 
 .link {
     display: none;
+    max-width: 40px;
+    font-size: 25px;
+    font-family: Roboto;
+    color: gold;
+    position: relative;
+    left: -40px;
 }
 
-
-/* nav:hover .link {
+nav:hover .link {
     display: inline-block;
-    position: absolute;
-    left: 1%;
-} */
+}
