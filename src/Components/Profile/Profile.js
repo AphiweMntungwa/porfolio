@@ -1,11 +1,34 @@
 import React, { Component } from "react";
-import './profile.css'
+import Box from "../BoxComponent/BoxComponent";
+import Header from "./Header";
 
-class Profile extends Component {
+import "./profile.css";
+
+export class Profile extends Component {
+  state = {};
+  boxStyles = {
+    topBoxStyle: {
+      position: "fixed",
+      left: "19%",
+      bottom: "49%",
+      width: "70vw",
+      height: "40vh",
+    },
+    smallBoxStyle: {
+      position: "relative",
+      left: "20%",
+      top: "175px",
+      width: "59vw",
+      height: "35vh",
+    },
+  };
   render() {
     return (
       <div className="profile">
-        <h1>Aphiwe Mntungwa</h1>
+        <Box styles={this.boxStyles.topBoxStyle}>
+          <Header></Header>
+        </Box>
+        <Box styles={this.boxStyles.smallBoxStyle} />
       </div>
     );
   }
