@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=Roboto:wght@500&display=swap');
 h1 {
-    font-family: Roboto;
+    font-family: Roboto Mono;
     text-align: center;
+    background-color: rgb(200, 201, 170);
+    margin: 0;
+    padding: 2%;
+    min-height: 1.5em;
+    max-height: fit-content;
+    color: #0d5c58;
+    /* border-radius: inherit; */
 }
