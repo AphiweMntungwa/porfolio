@@ -1,14 +1,11 @@
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
 import Profile from "./Components/Profile/Profile";
+import Navbar from "./Components/Navbar/Navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Profile />
-    </div>
-  );
-}
+const App =({children}) => (
+  <div className="App">
+    {children}
+  </div>
+);
 
 export default App;

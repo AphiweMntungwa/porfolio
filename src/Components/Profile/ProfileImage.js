@@ -7,8 +7,8 @@ const style = {
   position: "relative",
   //   left: "19%",
   //   bottom: "49%",
-  width: "14em",
-  height: "35vh",
+  width: "11em",
+  height: "11em",
   borderRadius: "50%",
   // display: "inline-block"
 };

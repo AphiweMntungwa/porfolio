@@ -1,14 +1,16 @@
 import React from "react";
 import Box from "../../BoxComponent/BoxComponent";
+import "./personal.css";
 
 const detailStyles = {
-//   width: "70%",
+  //   width: "70%",
   position: "relative",
-//   left: "1.5vw",
-//   bottom: "6.2vh",
-//   display: "inline-block",
+  //   left: "1.5vw",
+  //   bottom: "6.2vh",
+  //   display: "inline-block",
   border: "border",
   boxShadow: "none",
+  textAlign: "center",
 };
 const Personal = () => {
   return (

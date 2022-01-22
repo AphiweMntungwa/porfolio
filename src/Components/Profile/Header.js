@@ -2,21 +2,39 @@ import React, { Component } from "react";
 import "./header.css";
 
 class Header extends Component {
-  state = { headerLetters: [] };
+  state = { headerLetters: [], jokes: [],  jokeCount: 0};
 
   componentDidMount() {
-    const header = `Aphiwe here welcome to my portfolio app. `;
-
+    let jokeApi = [];
     let j = 0;
-    setInterval(() => {
-      this.setState(({ headerLetters }) => ({
-        headerLetters: [...headerLetters, ...header[j % header.length]],
-      }));
+    let header = [];
 
-      j += 1;
-      this.state.headerLetters.length >= header.length &&
-        this.setState({ headerLetters: [] });
-    }, 200);
+    fetch(
+      `https://v2.jokeapi.dev/joke/Programming?blacklistFlags=religious,political,racist,sexist&type=single&amount=10`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        header = ([...data.jokes][0]).joke;
+        console.log(header)
+        interval()
+      })
+      .catch((e) => header = `ERROR LOADING JOKES`);
+
+    
+    const interval = () => {
+      setInterval(() => {
+        this.setState(({ headerLetters }) => ({
+          headerLetters: [...headerLetters, ...header[j % header.length]],
+        }));
+
+        j += 1;
+        this.state.headerLetters.length >= header.length &&
+          this.setState((pvS) => ({
+            headerLetters: [],
+            jokeCount: pvS.jokeCount + 1,
+          }));
+      }, 150);
+    };
   }
 
   render() {
