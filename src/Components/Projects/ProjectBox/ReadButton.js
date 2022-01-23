@@ -9,10 +9,7 @@ class ReadButton extends Component {
         readMore: readMore ? false : true,
         moreOrLess: moreOrLess === "More" ? "Less" : "More",
       };
-    }),
-      () => {
-        console.log(this.state.readMore);
-      };
+    });
   };
   returnParagraph = () => {
     return this.state.readMore ? this.props.paragraph : null;
@@ -36,7 +33,6 @@ class ReadButton extends Component {
           Read {this.state.moreOrLess}
         </button>
         {this.returnParagraph()}
-        {console.log(this.returnParagraph())}
       </div>
     );
   }

@@ -31,18 +31,19 @@ const projectBox = {
 };
 const firstP = ` 
   Snitcher is a platform where you can post thoughts and attach resources
-  like youtube videos on your posts to make a playlist for your post.{" "}`;
+  like youtube videos on your posts to make a playlist for your post.`;
 const secondP = `This is my static Portfolio app made of React, it does not proxy 
 any backend server`;
 
 const snitcherTech = {
   list: [
-    { id: 1, int: "expressJs" },
+    { id: 1, int: "Node.js" },
     { id: 2, int: "RESTful" },
     { id: 3, int: "HTML, CSS & VanillaJs" },
-    { id: 4, int: "Ajax" },
-    { id: 5, int: "M-V-C pattern" },
-    { id: 6, int: "Moongoose" },
+    { id: 4, int: "Bootstrap" },
+    { id: 5, int: "AJAX" },
+    { id: 6, int: "M-V-C pattern" },
+    { id: 7, int: "Moongoose" },
   ],
   title: "Technical Features",
 };
@@ -56,17 +57,17 @@ const portfolioTech = {
 };
 
 const snitParag = (
-  <p>
+  <p className="snit-parag">
     Snitcher was my first foray into full stack web development. It was an
-    attempt to make a dynamic social network and it is without a js framework
-    like React which made it painful to manipulate the UI. In the future i hope
-    to make a React UI to proxy Snitcher's backend.
+    attempt to make a dynamic social network and it is without a javaScript framework
+    like React which made it painful to update the UI imperatively based on user 
+    interaction. In the future i hope to make a React UI to proxy Snitcher's backend.
   </p>
 );
 
 const portfParag = (
-  <p>
-    I plan to build a server for my portfolio for more functionality if need be.
+  <p className="portf-parag"> 
+    I plan to build a server for my portfolio for more functionality if the need arises.
   </p>
 )
 

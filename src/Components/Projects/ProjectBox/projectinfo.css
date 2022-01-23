@@ -15,3 +15,8 @@
 .projectinfo {
     width: 100%;
 }
+
+.snit-parag,
+.portf-parag {
+    font-family: 'Lucida Sans Unicode';
+}
