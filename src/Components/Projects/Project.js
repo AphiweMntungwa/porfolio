@@ -59,17 +59,19 @@ const portfolioTech = {
 const snitParag = (
   <p className="snit-parag">
     Snitcher was my first foray into full stack web development. It was an
-    attempt to make a dynamic social network and it is without a javaScript framework
-    like React which made it painful to update the UI imperatively based on user 
-    interaction. In the future i hope to make a React UI to proxy Snitcher's backend.
+    attempt to make a dynamic social network and it is without a javaScript
+    framework like React which made it painful to update the UI imperatively
+    based on user interaction. In the future i hope to make a React UI to proxy
+    Snitcher's backend.
   </p>
 );
 
 const portfParag = (
-  <p className="portf-parag"> 
-    I plan to build a server for my portfolio for more functionality if the need arises.
+  <p className="portf-parag">
+    I plan to build a server for my portfolio for more functionality if the need
+    arises.
   </p>
-)
+);
 
 const Project = () => (
   <div className="project">
@@ -82,7 +84,7 @@ const Project = () => (
           img={snitcher}
           title="Snitcher"
           ptag={firstP}
-          href={"https://whispering-hamlet-11552.herokuapp.com/"}
+          href={"https://snitcherapp.herokuapp.com/"}
           text="Try it now!"
           styleprop={snitcherTech}
           paragraph={snitParag}
