@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+.details {
+    font-size: 1.6em;
+    color: rgb(13, 92, 88);
+    font-family: Kanit;
+    font-weight: 700;
+}

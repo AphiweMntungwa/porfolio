@@ -2,3 +2,9 @@
     display: inline-block;
     height: 150vh;
 }
+
+.p-header {
+    font-size: 1.3em;
+    font-family: Roboto Mono;
+    text-align: center;
+}

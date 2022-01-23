@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import "./header.css";
 
 class Header extends Component {
-  state = { headerLetters: [], jokes: [],  jokeCount: 0};
+  state = { headerLetters: [], jokes: [], jokeCount: 0 };
 
   componentDidMount() {
-    let jokeApi = [];
     let j = 0;
     let header = [];
 
@@ -14,13 +13,14 @@ class Header extends Component {
     )
       .then((response) => response.json())
       .then((data) => {
-        header = ([...data.jokes][0]).joke;
-        console.log(header)
-        interval()
+        header = [...data.jokes][0].joke;
+        interval();
       })
-      .catch((e) => header = `ERROR LOADING JOKES`);
-
+      .catch((e) => {header = `ERROR LOADING JOKES!!!!`, interval()})
+        
+       
     
+
     const interval = () => {
       setInterval(() => {
         this.setState(({ headerLetters }) => ({
@@ -33,8 +33,9 @@ class Header extends Component {
             headerLetters: [],
             jokeCount: pvS.jokeCount + 1,
           }));
-      }, 150);
+      }, 200);
     };
+
   }
 
   render() {

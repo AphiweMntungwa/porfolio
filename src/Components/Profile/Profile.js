@@ -3,6 +3,7 @@ import Box from "../BoxComponent/BoxComponent";
 import Header from "./Header";
 import ProfileImage from "./ProfileImage";
 import Personal from "./Person/Personal";
+import Details from "./Details/Details";
 import "./profile.css";
 
 export const boxStyles = {
@@ -12,7 +13,6 @@ export const boxStyles = {
     top: "5%",
     width: "70vw",
     height: "fit-content",
-    // borderRadius: "3em",
     boxShadow: "none",
     border: "2px solid black",
   },
@@ -29,6 +29,10 @@ export const boxStyles = {
     alignItems: "center",
   },
 };
+const detailsBoxStyle = {
+  ...boxStyles.smallBoxStyle,
+  ...{ position: "relative", left: "75%", top: "-32.3%", width: '29vw' },
+};
 
 const Profile = () => (
   <div className="profile">
@@ -38,7 +42,10 @@ const Profile = () => (
     <Box styles={boxStyles.smallBoxStyle}>
       <ProfileImage />
       <Personal />
-    </Box>{" "}
+    </Box>
+    <Box styles={detailsBoxStyle}>
+      <Details />
+    </Box>
   </div>
 );
 

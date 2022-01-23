@@ -1,0 +1,17 @@
+.app-image {
+    width: 100%;
+}
+
+.app-image+h4 {
+    font-family: Roboto;
+    letter-spacing: 2px;
+}
+
+.snitcherinfo {
+    font-family: Roboto Mono;
+    font-size: 1.2em;
+}
+
+.projectinfo {
+    width: 100%;
+}
