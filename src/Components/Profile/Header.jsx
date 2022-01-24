@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./header.css";
 
 class Header extends Component {
-  state = { headerLetters: [], jokes: [], jokeCount: 0 };
+  state = { headerLetters: [], jokes: [], jokeCount: 0, int:  ''};
 
   componentDidMount() {
     let j = 0;
@@ -18,11 +18,8 @@ class Header extends Component {
       })
       .catch((e) => {header = `ERROR LOADING JOKES!!!!`, interval()})
         
-       
-    
-
     const interval = () => {
-      setInterval(() => {
+      const headerInterval = setInterval(() => {
         this.setState(({ headerLetters }) => ({
           headerLetters: [...headerLetters, ...header[j % header.length]],
         }));
@@ -34,8 +31,12 @@ class Header extends Component {
             jokeCount: pvS.jokeCount + 1,
           }));
       }, 200);
+      this.setState({int:headerInterval})
     };
+  }
 
+  componentWillUnmount(){
+    clearInterval(this.state.int)
   }
 
   render() {

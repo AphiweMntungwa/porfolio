@@ -1,7 +1,6 @@
 import React from "react";
 import aphiweMntungwa from "../../Assets/aphiwe-mntungwa.jpg";
 import Box from "../BoxComponent/BoxComponent";
-import "./profile-image.css";
 
 const style = {
   position: "relative",

@@ -2,3 +2,10 @@
     display: inline-block;
     height: 150vh;
 }
+
+.aboutdet {
+    font-family: monospace;
+    font-size: 1.3em;
+    line-height: 1.3;
+    color: black;
+}
