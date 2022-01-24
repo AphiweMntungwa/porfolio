@@ -37,6 +37,7 @@ const Footer = () => (
         <i className="fab fa-facebook"></i>
       </a>
     </Box>
+    <footer>2022 &copy; Aphiwe Mntungwa</footer>
   </span>
 );
 

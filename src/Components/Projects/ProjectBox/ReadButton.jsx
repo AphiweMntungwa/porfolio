@@ -17,7 +17,7 @@ class ReadButton extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ width: "100%" }}>
         <button
           onClick={this.toggleParagraph}
           style={{
