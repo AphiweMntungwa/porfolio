@@ -92,10 +92,8 @@ const Project = () => (
       </Box>
       <Box styles={projectBox} cname='portfolio-app'>
         <ProjectInfo
-          // img={snitcher}
           title="Porfolio"
           ptag={secondP}
-          // href={"https://whispering-hamlet-11552.herokuapp.com/"}
           styleprop={portfolioTech}
           paragraph={portfParag}
         />

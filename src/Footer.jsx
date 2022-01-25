@@ -9,10 +9,6 @@ const socialIconStyles = {
   height: "80px",
 };
 const Footer = () => (
-  //   <span
-  //     className="socialIcon"
-  //     style={{ width: "fit-content", height: "fit-content" }}
-  //   >
   <Box
     cname="socialIcon"
     styles={{
@@ -46,7 +42,6 @@ const Footer = () => (
       <i className="fab fa-facebook"></i>
     </a>
   </Box>
-  //   </span>
 );
 
 export default Footer;

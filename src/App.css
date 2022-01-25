@@ -4,8 +4,6 @@ body {
 
 .App {
     height: fit-content;
-    /* overflow-x: hidden;
-    overflow-y: scroll; */
 }
 
 .socialIcon a {
@@ -16,11 +14,3 @@ body {
     color: rgb(1, 1, 15);
     font-size: 1.8em;
 }
-
-
-/* footer {
-    position: relative;
-    bottom: 3em;
-    left: 49vw;
-    width: 15vw;
-} */
