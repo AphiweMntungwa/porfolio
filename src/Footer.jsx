@@ -19,6 +19,14 @@ const Footer = () => (
         textAlign: "center",
         boxShadow: "none",
         border: "none",
+        position: " sticky",
+        marginTop: "-92vh",
+        left: "91vw",
+        width: " 2vw",
+        height: "20vh",
+        textAlign: " center",
+        boxShadow: "none",
+        border: "none",
       }}
     >
       <a href="https://github.com/AphiweMntungwa">
@@ -37,7 +45,6 @@ const Footer = () => (
         <i className="fab fa-facebook"></i>
       </a>
     </Box>
-    <footer>2022 &copy; Aphiwe Mntungwa</footer>
   </span>
 );
 

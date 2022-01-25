@@ -30,7 +30,7 @@ class Header extends Component {
             headerLetters: [],
             jokeCount: pvS.jokeCount + 1,
           }));
-      }, 200);
+      }, 100);
       this.setState({int:headerInterval})
     };
   }

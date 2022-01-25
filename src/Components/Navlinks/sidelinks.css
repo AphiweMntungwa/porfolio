@@ -49,3 +49,9 @@ nav:hover i {
 nav:hover .link {
     display: inline-block;
 }
+
+
+/* @media (max-width: 730px) {
+    .side-icon {
+        background-color: #000c18;
+    } */
