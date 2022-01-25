@@ -8,3 +8,50 @@
     font-family: Roboto Mono;
     text-align: center;
 }
+
+@media (max-width: 730px) {
+    .snitcher-app {
+        flex-grow: 1;
+        margin-left: -10px;
+        margin-right: 4px;
+    }
+    .portfolio-app {
+        flex-grow: 1;
+        /* width: 53vw !important; */
+    }
+    .header-projects {
+        left: 19% !important;
+    }
+}
+
+@media (max-width: 530px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .snitcher-app,
+    .portfolio-app {
+        width: 55vw !important;
+    }
+    .snitcher-app {
+        top: -7px !important;
+    }
+    .portfolio-app {
+        left: -7px !important;
+    }
+    .project {
+        height: 180vh;
+    }
+}
+
+@media (max-width:400px) {
+    .project {
+        height: 210vh;
+    }
+}
+
+@media (max-width: 300px) {
+    .project {
+        height: 230vh;
+    }
+}

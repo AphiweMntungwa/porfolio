@@ -3,6 +3,10 @@
     height: 150vh;
 }
 
+.profile-box {
+    background-color: rgb(163, 137, 137);
+}
+
 @media (max-width: 956px) {
     .link {
         font-size: 12px;
@@ -49,6 +53,17 @@
     }
     .null {
         display: none;
+    }
+    .profile-box {
+        width: 67vw !important;
+    }
+    .details-box {
+        left: 26% !important;
+        top: 17.7% !important;
+        width: 67vw !important;
+    }
+    .socialIcon {
+        left: 2% !important;
     }
 }
 

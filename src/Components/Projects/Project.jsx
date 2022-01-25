@@ -75,11 +75,11 @@ const portfParag = (
 
 const Project = () => (
   <div className="project">
-    <Box styles={topBoxStyle}>
+    <Box styles={topBoxStyle} cname='header-projects'>
       <h4 className="p-header">Projects</h4>
     </Box>
-    <Box styles={customBox}>
-      <Box styles={projectBox}>
+    <Box styles={customBox} cname='flex'>
+      <Box styles={projectBox} cname='snitcher-app'>
         <ProjectInfo
           img={snitcher}
           title="Snitcher"
@@ -90,7 +90,7 @@ const Project = () => (
           paragraph={snitParag}
         />
       </Box>
-      <Box styles={projectBox}>
+      <Box styles={projectBox} cname='portfolio-app'>
         <ProjectInfo
           // img={snitcher}
           title="Porfolio"

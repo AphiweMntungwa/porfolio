@@ -39,11 +39,11 @@ const Profile = () => (
     <Box styles={boxStyles.topBoxStyle}>
       <Header />
     </Box>{" "}
-    <Box styles={boxStyles.smallBoxStyle}>
+    <Box styles={boxStyles.smallBoxStyle} cname='profile-box'>
       <ProfileImage />
       <Personal />
     </Box>
-    <Box styles={detailsBoxStyle}>
+    <Box styles={detailsBoxStyle} cname='details-box'>
       <Details />
     </Box>
   </div>
