@@ -4,9 +4,9 @@ this to write some of my thoughts, across a wide range of topics for anyone who 
 this far to read.`,
 
 
-    secondPar: `This post seeks to highlight the dangers of surface 
-ideas that aren't abstract enough and how outdated they can be because of being
-accepted as natural law and being uncontextualised...`
+    secondPar: `This post seeks to highlight the dangers of uncontextualised 
+ideas that aren't abstract enough, and how  they can be outdated because of being
+accepted as natural law in a time where context has changed.`
 }
 
 export default blogs;
