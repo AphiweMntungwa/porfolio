@@ -12,12 +12,14 @@ const detailStyles = {
 const styleprop = {
   list: [
     { id: 1, int: "Programming" },
-    { id: 2, int: "Philosophy" },
-    { id: 3, int: "Graphic Editing" },
-    { id: 4, int: "Learning" },
-    { id: 5, int: "Teaching" },
+    { id: 2, int: "JavaScript" },
+    { id: 3, int: "Web Design" },
+    { id: 4, int: "Philosophy" },
+    { id: 5, int: "Graphic Editing" },
+    { id: 6, int: "Learning" },
+    { id: 7, int: "Teaching" },
   ],
-    title: "interests",
+  title: "interests",
 };
 
 const Personal = () => {

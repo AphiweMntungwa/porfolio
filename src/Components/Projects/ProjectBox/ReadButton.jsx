@@ -12,7 +12,9 @@ class ReadButton extends Component {
     });
   };
   returnParagraph = () => {
-    return this.state.readMore ? this.props.paragraph : null;
+    return this.state.readMore ? (
+      <p className="snit-parag">{this.props.paragraph}</p>
+    ) : null;
   };
 
   render() {

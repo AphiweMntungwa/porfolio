@@ -4,7 +4,11 @@
 }
 
 .profile-box {
-    background-color: rgb(163, 137, 137);
+    background-color: #cfebde;
+}
+
+.details-box {
+    background-color: #cfebde;
 }
 
 @media (max-width: 956px) {
@@ -64,6 +68,13 @@
     }
     .socialIcon {
         left: 2% !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .profile-img-box {
+        width: 8em !important;
+        height: 8em !important;
     }
 }
 

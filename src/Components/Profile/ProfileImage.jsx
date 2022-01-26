@@ -7,13 +7,13 @@ const style = {
   width: "11em",
   height: "11em",
   padding: ".2%",
-  border: ".5px solid rgb(244 249 249)",
+  border: "0.5px solid rgb(2 44 44)",
   borderRadius: "50%",
 };
 
 const ProfileImage = () => {
   return (
-    <Box styles={style}>
+    <Box styles={style} cname="profile-img-box">
       <img
         src={aphiweMntungwa}
         style={{

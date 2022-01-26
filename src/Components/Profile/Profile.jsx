@@ -31,7 +31,7 @@ export const boxStyles = {
 };
 const detailsBoxStyle = {
   ...boxStyles.smallBoxStyle,
-  ...{ position: "relative", left: "75%", top: "-32.3%", width: '29vw' },
+  ...{ position: "relative", left: "75%", top: "-36.3%", width: '29vw' },
 };
 
 const Profile = () => (
