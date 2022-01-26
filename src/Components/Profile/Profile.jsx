@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Box from "../BoxComponent/BoxComponent";
 import Header from "./Header";
 import ProfileImage from "./ProfileImage";
