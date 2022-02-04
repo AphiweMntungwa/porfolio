@@ -5,10 +5,35 @@
 
 .profile-box {
     background-color: #cfebde;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(10, 2, 19);
 }
 
 .details-box {
     background-color: #cfebde;
+    width: 43%;
+    padding-inline: 1em;
+    box-sizing: border-box;
+    border: 1px solid rgb(10, 2, 19);
+}
+
+.d-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fix-content {
+    width: 60%;
+    margin-left: 16pc;
+    flex-wrap: wrap;
+}
+
+.fix-content div {
+    padding-block: 2em;
 }
 
 @media (max-width: 956px) {
@@ -25,6 +50,28 @@
     }
     .side-icon:hover .link {
         color: white;
+    }
+    .fix-content {
+        margin-left: 10pc;
+    }
+}
+
+@media (max-width:840px) {
+    .d-flex {
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .profile-box {
+        margin-bottom: 1em;
+        width: 70%;
+    }
+    .details-box {
+        width: 70%;
+    }
+    .fix-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -50,7 +97,6 @@
     }
     .side-icon {
         width: 5em;
-        /* height: 100%; */
     }
     .side-icon:hover {
         background-color: #000c18;
@@ -69,12 +115,19 @@
     .socialIcon {
         left: 2% !important;
     }
+    .fix-content {
+        margin-left: unset;
+        width: 100%;
+    }
 }
 
 @media (max-width: 540px) {
     .profile-img-box {
         width: 8em !important;
         height: 8em !important;
+    }
+    .fix-content {
+        /* margin-left: 2pc; */
     }
 }
 

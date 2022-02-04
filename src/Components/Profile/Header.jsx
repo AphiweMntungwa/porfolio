@@ -40,7 +40,7 @@ class Header extends Component {
   }
 
   render() {
-    return <h1>{this.state.headerLetters}</h1>;
+    return <h1 className={this.props.cname}>{this.state.headerLetters}</h1>;
   }
 }
 

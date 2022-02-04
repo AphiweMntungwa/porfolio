@@ -29,23 +29,21 @@ export const boxStyles = {
     alignItems: "center",
   },
 };
-const detailsBoxStyle = {
-  ...boxStyles.smallBoxStyle,
-  ...{ position: "relative", left: "75%", top: "-36.3%", width: '29vw' },
-};
 
 const Profile = () => (
   <div className="profile">
-    <Box styles={boxStyles.topBoxStyle}>
-      <Header />
-    </Box>{" "}
-    <Box styles={boxStyles.smallBoxStyle} cname='profile-box'>
-      <ProfileImage />
-      <Personal />
-    </Box>
-    <Box styles={detailsBoxStyle} cname='details-box'>
-      <Details />
-    </Box>
+    <div className="fix-content">
+      <Header cname="prof-header" />
+      <div className="d-flex">
+        <Box cname="profile-box">
+          <ProfileImage />
+          <Personal />
+        </Box>
+        <Box cname="details-box">
+          <Details />
+        </Box>
+      </div>
+    </div>
   </div>
 );
 
