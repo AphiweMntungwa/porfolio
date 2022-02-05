@@ -5,6 +5,7 @@ h1 {
     text-align: center;
     background-color: rgb(200, 201, 170);
     margin: 0;
+    margin-bottom: 1em;
     padding: 2%;
     min-height: 1.5em;
     max-height: fit-content;
