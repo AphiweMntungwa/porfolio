@@ -34,10 +34,10 @@
 }
 
 .snitcher-app,
-.portfolio-app {
-    position: "relative";
-    left: 26%;
-    top: 131px;
+.portfolio-app,
+.snitcherReact,
+.snitcher-server {
+    margin-top: .1em;
     width: 24vw;
     height: fit-content;
     padding: 2%;

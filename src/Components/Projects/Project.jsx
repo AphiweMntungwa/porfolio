@@ -26,6 +26,12 @@ const firstP = `
   like youtube videos on your posts to make a playlist for your post.`;
 const secondP = `This is my static Portfolio app made of React, it does not proxy 
 any backend server.`;
+const snitReactParag = `This is the react front-end for the restructured snitcher app. The old Snitcher
+kept both front and back end on the same server and didn't use react. This new interface is connected 
+to the snitcher server which also deployed on heroku on a different server.`;
+const snitServer = `This is the Node back-end for the restructured snitcher app. It improves on the old
+Smitcher version with new featires like profile images for users, http chat application and a upvoting
+and downvoting sytem for both posts and comments on posts`;
 
 const snitcherTech = {
   list: [
@@ -42,8 +48,29 @@ const snitcherTech = {
 const portfolioTech = {
   list: [
     { id: 1, int: "React Application" },
-    { id: 2, int: "HTML CSS" },
-    { id: 3, int: "Fetch API" },
+    { id: 2, int: "HTML" },
+    { id: 3, int: "CSS" },
+    { id: 4, int: "Fetch API" },
+  ],
+  title: "Technical Features",
+};
+const snitReactTech = {
+  list: [
+    { id: 1, int: "ReactJS" },
+    { id: 2, int: "HTML" },
+    { id: 3, int: "CSS" },
+    { id: 4, int: "Axios" },
+    { id: 5, int: "Bootstrap" },
+  ],
+  title: "Technical Features",
+};
+const snitBackTech = {
+  list: [
+    { id: 1, int: "NodeJS" },
+    { id: 2, int: "MongoDB" },
+    { id: 3, int: "ExpressJs" },
+    { id: 4, int: "Axios" },
+    { id: 5, int: "Cloudinary" },
   ],
   title: "Technical Features",
 };
@@ -64,6 +91,16 @@ const portfParag = (
     arises.
   </p>
 );
+const snitcherReact = (
+  <p className="snitcherParaReact">
+    Both servers are deployed in heroku servers.
+  </p>
+);
+const snitServerParag = (
+  <p className="snitServerParag">
+    Snitcher back end server deployed on heroku
+  </p>
+);
 
 const Project = () => (
   <div className="project">
@@ -74,7 +111,7 @@ const Project = () => (
       <Box cname='snitcher-app'>
         <ProjectInfo
           img={snitcher}
-          title="Snitcher"
+          title="Deprecated Snitcher"
           ptag={firstP}
           href={"https://snitcherapp.herokuapp.com/"}
           text=""
@@ -92,6 +129,28 @@ const Project = () => (
           styleprop={portfolioTech}
           paragraph={portfParag}
           github='https://github.com/AphiweMntungwa/porfolio'
+        />
+      </Box>
+      <Box cname='snitcherReact'>
+        <ProjectInfo
+          title="Snitcher React Client"
+          ptag={snitReactParag}
+          href='https://snitcherapp.herokuapp.com'
+          text=''
+          styleprop={snitReactTech}
+          paragraph={snitcherReact}
+          github='https://github.com/AphiweMntungwa/snitcherReact'
+        />
+      </Box>
+      <Box cname='snitcher-server'>
+        <ProjectInfo
+          title="Snitcher Backend Server"
+          ptag={snitServer}
+          href=''
+          text=''
+          styleprop={snitBackTech}
+          paragraph={snitServerParag}
+          github='https://github.com/AphiweMntungwa/Snitcher'
         />
       </Box>
     </Box>
