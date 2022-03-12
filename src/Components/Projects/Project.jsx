@@ -21,19 +21,11 @@ const customBox = {
   border: "none",
 };
 
-const projectBox = {
-  ...smallBoxStyle,
-  left: 0,
-  top: 0,
-  padding: ".5%",
-  textAlign: "center",
-  boxShadow: "none",
-};
 const firstP = ` 
   Snitcher is a platform where you can post thoughts and attach resources
   like youtube videos on your posts to make a playlist for your post.`;
 const secondP = `This is my static Portfolio app made of React, it does not proxy 
-any backend server`;
+any backend server.`;
 
 const snitcherTech = {
   list: [
@@ -75,27 +67,31 @@ const portfParag = (
 
 const Project = () => (
   <div className="project">
-    <Box styles={topBoxStyle} cname='header-projects'>
+    <Box cname='header-projects'>
       <h4 className="p-header">Projects</h4>
     </Box>
-    <Box styles={customBox} cname='flex'>
-      <Box styles={projectBox} cname='snitcher-app'>
+    <Box cname='flex'>
+      <Box cname='snitcher-app'>
         <ProjectInfo
           img={snitcher}
           title="Snitcher"
           ptag={firstP}
           href={"https://snitcherapp.herokuapp.com/"}
-          text="Try it now!"
+          text=""
           styleprop={snitcherTech}
           paragraph={snitParag}
+          github='https://github.com/AphiweMntungwa/Snitcher'
         />
       </Box>
-      <Box styles={projectBox} cname='portfolio-app'>
+      <Box cname='portfolio-app'>
         <ProjectInfo
           title="Porfolio"
           ptag={secondP}
+          href=''
+          text=''
           styleprop={portfolioTech}
           paragraph={portfParag}
+          github='https://github.com/AphiweMntungwa/porfolio'
         />
       </Box>
     </Box>

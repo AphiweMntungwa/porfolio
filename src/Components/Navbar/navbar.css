@@ -4,8 +4,9 @@ nav {
     height: 100vh;
     transition: width .4s .2s ease-in-out;
     display: inline-block;
-    position: fixed;
+    position: sticky;
     top: 0;
+    align-self: flex-start;
 }
 
 nav:hover {

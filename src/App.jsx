@@ -4,7 +4,7 @@ import Footer from "./Footer";
 const App = ({ children }) => (
   <div className="App">
     {children}
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 

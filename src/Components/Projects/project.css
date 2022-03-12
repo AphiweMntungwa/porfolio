@@ -1,6 +1,12 @@
 .project {
-    display: inline-block;
-    height: 150vh;
+    background-color: #2c2b23;
+    width: fit-content;
+    flex-grow: 1;
+}
+
+.snit-parag {
+    width: 92%;
+    color: #a9a9a9;
 }
 
 .p-header {
@@ -9,18 +15,28 @@
     text-align: center;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header-projects {
+    color: wheat;
+}
+
 @media (max-width: 730px) {
     .snitcher-app {
-        flex-grow: 1;
+        /* flex-grow: 1; */
         margin-left: -10px;
         margin-right: 4px;
     }
     .portfolio-app {
-        flex-grow: 1;
-        /* width: 53vw !important; */
+        /* flex-grow: 1; */
     }
-    .header-projects {
-        left: 19% !important;
+    .header-projects {}
+    .project {
+        width: 100%;
     }
 }
 
@@ -31,27 +47,28 @@
     }
     .snitcher-app,
     .portfolio-app {
-        width: 55vw !important;
+        width: 80%;
+        border: none;
     }
     .snitcher-app {
-        top: -7px !important;
+        margin-bottom: 1em;
     }
     .portfolio-app {
-        left: -7px !important;
+        /* left: -7px !important; */
     }
     .project {
-        height: 180vh;
+        /* height: 180vh; */
     }
 }
 
 @media (max-width:400px) {
     .project {
-        height: 210vh;
+        /* height: 210vh; */
     }
 }
 
 @media (max-width: 300px) {
     .project {
-        height: 230vh;
+        /* height: 230vh; */
     }
 }

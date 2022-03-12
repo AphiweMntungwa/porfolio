@@ -13,9 +13,11 @@ h1 {
 }
 
 .prof-header {
-    border: 2px solid black;
+    background-color: inherit;
+    color: gold;
     margin-top: 1em;
     width: 100%;
+    box-shadow: 0px 0px 3px;
 }
 
 @media (max-width: 730px) {

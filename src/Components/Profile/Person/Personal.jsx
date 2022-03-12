@@ -19,7 +19,7 @@ const styleprop = {
     { id: 6, int: "Learning" },
     { id: 7, int: "Teaching" },
   ],
-  title: "interests",
+  title: "Interests",
 };
 
 const Personal = () => {

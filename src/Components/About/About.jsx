@@ -1,23 +1,20 @@
 import React from "react";
 import "./about.css";
-import { boxStyles } from "../Profile/Profile";
 import Box from "../BoxComponent/BoxComponent";
 import Quote from "./Quote";
 import ReadButton from "../Projects/ProjectBox/ReadButton";
 import parag from "./paragraphs";
 
-const firstBoxStyles = boxStyles.topBoxStyle;
-const parBox = boxStyles.smallBoxStyle;
 const about = () => {
   return (
     <div className="about">
-      <Box styles={firstBoxStyles}>
+      <Box cname='about-header'>
         <h4 className="p-header">About Me</h4>
       </Box>
-      <Box styles={{ ...firstBoxStyles, top: "131px" }}>
+      <Box cname='about-quote'>
         <Quote />
       </Box>
-      <Box styles={{ ...parBox, top: "155px", width: "68vw" }}>
+      <Box cname='par-box'>
         <h4 className="p-header">Objective</h4>
         <p className="aboutdet">
           Developing 'learning' as a discipline

@@ -9,20 +9,34 @@ const iconBox = {
   boxShadow: "none",
 };
 
-
-const ProjectInfo = ({ img, title, ptag, href, styleprop, text, paragraph }) => (
+const ProjectInfo = ({
+  img,
+  title,
+  ptag,
+  href,
+  styleprop,
+  text,
+  paragraph,
+  github,
+}) => (
   <div className="projectinfo">
     <img className="app-image" src={img} alt="" />
     <h4> {title} </h4>
     <p className="snitcherinfo">
       {ptag}
-      <a
-        className="snitcher"
-        href={href}
-      >
+      <a className="snitcher" href={href}>
         {text}
         <i
           className="fas fa-external-link-alt"
+          style={{ fontSize: "1.1em" }}
+          aria-hidden="true"
+        ></i>
+      </a> 
+      &nbsp;
+      <a className="github" href={github}>
+        {text}
+        <i
+          className="fab fa-github"
           style={{ fontSize: "1.1em" }}
           aria-hidden="true"
         ></i>

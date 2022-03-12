@@ -3,7 +3,7 @@ body {
 }
 
 .App {
-    height: fit-content;
+    display: flex;
 }
 
 .socialIcon a {
@@ -13,4 +13,11 @@ body {
 .socialIcon i {
     color: rgb(1, 1, 15);
     font-size: 1.8em;
+}
+
+@media (max-width: 730px) {
+    .App {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
 }
