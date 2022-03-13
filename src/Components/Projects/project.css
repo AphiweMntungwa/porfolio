@@ -46,7 +46,9 @@
         align-items: center;
     }
     .snitcher-app,
-    .portfolio-app {
+    .portfolio-app,
+    .snitcherReact,
+    .snitcher-server {
         width: 80%;
         border: none;
     }
