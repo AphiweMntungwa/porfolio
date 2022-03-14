@@ -25,6 +25,25 @@
     color: wheat;
 }
 
+.snitcher-app {}
+
+.snitcher-app:hover {
+    content: "";
+    background-image: url('../../Assets/deprecated.png');
+}
+
+.snitcher-app:hover .name {
+    color: #000;
+}
+
+.snitcher-app:hover .snit-parag {
+    color: #000;
+}
+
+.snitcher-app:hover .interests li {
+    color: #000;
+}
+
 @media (max-width: 730px) {
     .snitcher-app {
         /* flex-grow: 1; */
