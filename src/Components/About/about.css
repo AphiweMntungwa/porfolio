@@ -30,7 +30,3 @@
     color: wheat;
     margin-top: 0.5em;
 }
-
-@media (max-width: 730px) {
-    .about {}
-}

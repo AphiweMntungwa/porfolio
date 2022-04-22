@@ -33,14 +33,13 @@ export const boxStyles = {
 const Profile = () => (
   <div className="profile">
     <div className="fix-content">
-      <Header cname="prof-header" />
       <div className="d-flex">
         <Box cname="profile-box">
           <ProfileImage />
           <Personal />
         </Box>
         <Box cname="details-box">
-          <Details />
+          <Header cname='details-header' />
         </Box>
       </div>
     </div>

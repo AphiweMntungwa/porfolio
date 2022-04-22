@@ -25,8 +25,6 @@
     color: wheat;
 }
 
-.snitcher-app {}
-
 .snitcher-app:hover {
     content: "";
     background-image: url('../../Assets/deprecated.png');
@@ -46,14 +44,9 @@
 
 @media (max-width: 730px) {
     .snitcher-app {
-        /* flex-grow: 1; */
         margin-left: -10px;
         margin-right: 4px;
     }
-    .portfolio-app {
-        /* flex-grow: 1; */
-    }
-    .header-projects {}
     .project {
         width: 100%;
     }
@@ -73,23 +66,5 @@
     }
     .snitcher-app {
         margin-bottom: 1em;
-    }
-    .portfolio-app {
-        /* left: -7px !important; */
-    }
-    .project {
-        /* height: 180vh; */
-    }
-}
-
-@media (max-width:400px) {
-    .project {
-        /* height: 210vh; */
-    }
-}
-
-@media (max-width: 300px) {
-    .project {
-        /* height: 230vh; */
     }
 }

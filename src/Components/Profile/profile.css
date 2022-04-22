@@ -30,14 +30,14 @@
 }
 
 .fix-content div {
-    padding-block: 2em;
+    padding-top: 2em;
 }
 
 .snitcher-app,
 .portfolio-app,
 .snitcherReact,
 .snitcher-server {
-    margin-top: .1em;
+    margin-top: 0.1em;
     width: 24vw;
     height: fit-content;
     padding: 2%;
@@ -67,7 +67,7 @@
     }
 }
 
-@media (max-width:840px) {
+@media (max-width: 840px) {
     .d-flex {
         flex-wrap: wrap;
         width: 80%;
@@ -137,14 +137,25 @@
         width: 8em !important;
         height: 8em !important;
     }
-    .fix-content {
-        /* margin-left: 2pc; */
-    }
 }
 
 @media (max-width: 280px) {
     .link {
         font-size: 0.6em;
         padding-left: 35px;
+    }
+}
+
+.profile-img-box img {
+    border: 1px dashed rgb(232, 193, 193);
+    animation: dash 2s;
+}
+
+@keyframes dash {
+    from {
+        border: 4px dashed blue;
+    }
+    to {
+        border: 1px dashed rgb(232, 193, 193);
     }
 }

@@ -37,3 +37,10 @@ h1 {
         width: 65%;
     }
 }
+
+@media (max-width:840px) {
+    .App .details-header,
+    .App .details-box {
+        padding-top: unset;
+    }
+}
