@@ -8,10 +8,10 @@ const Details = () => (
   <p className="my-par">
     Welcome to my personal website where you can... see more information about
     me; for whatever reason that may be. I'm a javaScript web developer,
-    utilising javaScript libraries and frameworks to create both the client and
-    server. That pretty much justifies what you see, this portfolio was made
-    with React.js and is one of my earlier react projects where i still
-    use&nbsp;
+    utilising javaScript libraries and frameworks to implement the client-server 
+    model in different architectural styles. That pretty much justifies what you see, 
+    this portfolio was made with React.js and is one of my earlier react projects 
+    where i still used &nbsp;
     <Tooltip
       html={
         <img
@@ -22,6 +22,7 @@ const Details = () => (
       }
       position="top"
       trigger="click"
+      arrow={true}
     >
       <b
         style={{

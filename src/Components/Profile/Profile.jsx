@@ -32,6 +32,18 @@ export const boxStyles = {
   },
 };
 
+const socialLinks = [
+  { link: "https://github.com/AphiweMntungwa", name: "github" },
+  {
+    link: "https://www.linkedin.com/in/aphiwe-mntungwa-a0b412218/",
+    name: "linkedin",
+  },
+  { link: "https://facebook.com/AphiweMntungwa", name: "facebook" },
+  { link: "tel:0765881859", name: "phone", noLogo:true },
+  { link: "mailto:aphiwemntungwa66@gmail.com", name: "gmail" },
+];
+
+
 const Profile = () => (
   <div className="profile">
     <div className="fix-content">
@@ -45,10 +57,11 @@ const Profile = () => (
             }
             position="left"
             trigger="mouseenter"
+            arrow={true}
           >
             <ProfileImage />
           </Tooltip>
-          <Contacts />
+          <Contacts socialLinks={socialLinks} />
           <Personal />
         </Box>
         <Box cname="details-box">

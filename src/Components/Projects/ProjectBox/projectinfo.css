@@ -20,3 +20,8 @@
 .portf-parag {
     font-family: 'Lucida Sans Unicode';
 }
+
+.small-width-links {
+    width: 4.5em;
+    animation: unset;
+}

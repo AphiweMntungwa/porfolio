@@ -116,7 +116,7 @@ const Project = () => (
           text=""
           styleprop={snitcherTech}
           paragraph={snitParag}
-          github="https://github.com/AphiweMntungwa/Snitcher"
+          github="https://github.com/AphiweMntungwa/khalipha"
         />
       </Box>
       <Box cname="snitcherReact">

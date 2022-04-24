@@ -38,12 +38,21 @@
 
 .khalipha:hover .icon-box,
 .khalipha:hover .snitcherinfo,
-.khalipha:hover .app-image {
+.khalipha:hover .app-image,
+.khalipha:hover .app-image+h4 {
     opacity: 0;
 }
 
 .khalipha:hover .read-button {
     opacity: 1;
+}
+
+.khalipha:hover .small-width-links {
+    border-color: rgb(24, 30, 26);
+}
+
+.khalipha:hover .small-width-links box-icon {
+    fill: rgb(17, 28, 35);
 }
 
 .snitcher-app:hover .name {

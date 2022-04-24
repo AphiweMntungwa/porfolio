@@ -25,7 +25,7 @@
 
 .fix-content {
     width: 60%;
-    margin-left: 16pc;
+    margin-left: 10pc;
     flex-wrap: wrap;
 }
 
@@ -62,6 +62,12 @@
     }
     .fix-content {
         margin-left: 10pc;
+    }
+}
+
+@media (min-width: 1000px) {
+    .fix-content {
+        width: 73%;
     }
 }
 
