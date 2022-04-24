@@ -8,6 +8,7 @@ const detailStyles = {
   border: "none",
   boxShadow: "none",
   textAlign: "center",
+  paddingTop: "unset",
 };
 const styleprop = {
   list: [

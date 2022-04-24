@@ -42,7 +42,7 @@ const ProjectInfo = ({
         ></i>
       </a>
     </p>
-    <Box styles={iconBox}>
+    <Box styles={iconBox} cname='icon-box' >
       <List styleprop={styleprop} />
     </Box>
     <ReadButton paragraph={paragraph} />

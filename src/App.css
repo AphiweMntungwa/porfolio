@@ -4,6 +4,7 @@ body {
 
 .App {
     display: flex;
+    min-height: 100vh;
 }
 
 .socialIcon a {
@@ -15,7 +16,7 @@ body {
     font-size: 1.8em;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 810px) {
     .App {
         flex-direction: column;
         overflow-x: hidden;

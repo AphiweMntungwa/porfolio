@@ -1,10 +1,9 @@
 import "./App.css";
-import Footer from "./Footer";
+import 'boxicons'
 
 const App = ({ children }) => (
   <div className="App">
     {children}
-    {/* <Footer /> */}
   </div>
 );
 

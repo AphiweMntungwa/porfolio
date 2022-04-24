@@ -5,14 +5,14 @@
 
 .profile-box {
     background-color: inherit;
-    width: 43%;
+    width: 37%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .details-box {
-    width: 43%;
+    width: 37%;
     padding-inline: 1em;
     box-sizing: border-box;
 }
@@ -33,6 +33,7 @@
     padding-top: 2em;
 }
 
+.khalipha,
 .snitcher-app,
 .portfolio-app,
 .snitcherReact,
@@ -47,7 +48,7 @@
     align-items: center;
 }
 
-@media (max-width: 956px) {
+@media (max-width: 1114px) {
     .link {
         font-size: 12px;
         position: relative;
@@ -59,11 +60,17 @@
     nav:hover .link+i {
         display: none;
     }
-    .side-icon:hover .link {
-        color: white;
-    }
     .fix-content {
         margin-left: 10pc;
+    }
+}
+
+@media (max-width: 1000px) {
+    .profile-box {
+        width: 50%;
+    }
+    .details-box {
+        width: 50%;
     }
 }
 
@@ -86,7 +93,7 @@
     }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 810px) {
     nav {
         width: 100%;
         height: 11%;
@@ -108,6 +115,9 @@
     }
     .side-icon {
         width: 5em;
+    }
+    .side-icon:hover .link {
+        color: white;
     }
     .side-icon:hover {
         background-color: #000c18;
@@ -147,15 +157,15 @@
 }
 
 .profile-img-box img {
-    border: 1px dashed rgb(232, 193, 193);
-    animation: dash 2s;
+    border: 1px dashed rgb(15, 39, 49);
+    animation: dash 1s;
 }
 
 @keyframes dash {
     from {
-        border: 4px dashed blue;
+        border: 1px dashed rgb(253, 255, 255);
     }
     to {
-        border: 1px dashed rgb(232, 193, 193);
+        border: 1px dashed rgb(15, 39, 49);
     }
 }

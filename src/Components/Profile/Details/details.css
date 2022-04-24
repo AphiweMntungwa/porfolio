@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-.details {
-    font-size: 1.4em;
-    color: wheat;
-    font-family: Kanit;
-    font-weight: 600;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+.my-par {
+    color: hsl(39, 97%, 90%);
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
 }

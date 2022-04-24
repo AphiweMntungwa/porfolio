@@ -3,7 +3,9 @@ import Box from "../BoxComponent/BoxComponent";
 import Header from "./Header";
 import ProfileImage from "./ProfileImage";
 import Personal from "./Person/Personal";
-import Details from "./Details/Details";
+import Contacts from "../Contacts/Contacts";
+import { Tooltip } from "react-tippy";
+import "react-tippy/dist/tippy.css";
 import "./profile.css";
 
 export const boxStyles = {
@@ -35,11 +37,22 @@ const Profile = () => (
     <div className="fix-content">
       <div className="d-flex">
         <Box cname="profile-box">
-          <ProfileImage />
+          <Tooltip
+            html={
+              <h4 style={{ color: "wheat", fontFamily: "Poppins" }}>
+                It was a G.I jane joke!
+              </h4>
+            }
+            position="left"
+            trigger="mouseenter"
+          >
+            <ProfileImage />
+          </Tooltip>
+          <Contacts />
           <Personal />
         </Box>
         <Box cname="details-box">
-          <Header cname='details-header' />
+          <Header cname="details-header" />
         </Box>
       </div>
     </div>

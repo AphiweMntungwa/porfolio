@@ -97,18 +97,50 @@ const snitcherReact = (
   </p>
 );
 const snitServerParag = (
-  <p className="snitServerParag">
-    Snitcher back end server deployed on heroku
-  </p>
+  <p className="snitServerParag">Snitcher back end server deployed on heroku</p>
 );
 
 const Project = () => (
   <div className="project">
-    <Box cname='header-projects'>
+    <Box cname="header-projects">
       <h4 className="p-header">Projects</h4>
     </Box>
-    <Box cname='flex'>
-      <Box cname='snitcher-app'>
+    <Box cname="flex">
+      <Box cname="khalipha">
+        <ProjectInfo
+          title="Khalipha"
+          ptag={firstP}
+          href={"https://khalipha.herokuapp.com/"}
+          text=""
+          styleprop={snitcherTech}
+          paragraph={snitParag}
+          github="https://github.com/AphiweMntungwa/Snitcher"
+        />
+      </Box>
+      <Box cname="snitcherReact">
+        <ProjectInfo
+          title="Snitcher"
+          ptag={snitReactParag}
+          href="https://snitcher-server.herokuapp.com"
+          text=""
+          styleprop={snitReactTech}
+          paragraph={snitcherReact}
+          github="https://github.com/AphiweMntungwa/snitcherReact"
+        />
+      </Box>
+      <Box cname="portfolio-app">
+        <ProjectInfo
+          title="Porfolio"
+          ptag={secondP}
+          href=""
+          text=""
+          styleprop={portfolioTech}
+          paragraph={portfParag}
+          github="https://github.com/AphiweMntungwa/porfolio"
+        />
+      </Box>
+
+      <Box cname="snitcher-app">
         <ProjectInfo
           img={snitcher}
           title="Deprecated Snitcher"
@@ -117,40 +149,19 @@ const Project = () => (
           text=""
           styleprop={snitcherTech}
           paragraph={snitParag}
-          github='https://github.com/AphiweMntungwa/Snitcher'
+          github="https://github.com/AphiweMntungwa/Snitcher"
         />
       </Box>
-      <Box cname='portfolio-app'>
-        <ProjectInfo
-          title="Porfolio"
-          ptag={secondP}
-          href=''
-          text=''
-          styleprop={portfolioTech}
-          paragraph={portfParag}
-          github='https://github.com/AphiweMntungwa/porfolio'
-        />
-      </Box>
-      <Box cname='snitcherReact'>
-        <ProjectInfo
-          title="Snitcher React Client"
-          ptag={snitReactParag}
-          href='https://snitcherapp.herokuapp.com'
-          text=''
-          styleprop={snitReactTech}
-          paragraph={snitcherReact}
-          github='https://github.com/AphiweMntungwa/snitcherReact'
-        />
-      </Box>
-      <Box cname='snitcher-server'>
+
+      <Box cname="snitcher-server">
         <ProjectInfo
           title="Snitcher Backend Server"
           ptag={snitServer}
-          href=''
-          text=''
+          href=""
+          text=""
           styleprop={snitBackTech}
           paragraph={snitServerParag}
-          github='https://github.com/AphiweMntungwa/Snitcher'
+          github="https://github.com/AphiweMntungwa/Snitcher"
         />
       </Box>
     </Box>
