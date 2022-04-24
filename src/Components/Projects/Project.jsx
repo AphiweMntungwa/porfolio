@@ -3,6 +3,7 @@ import Box from "../BoxComponent/BoxComponent";
 import { boxStyles } from "../Profile/Profile";
 import ProjectInfo from "./ProjectBox/ProjectInfo";
 import snitcher from "../../Assets/snitcher.jpg";
+import khalipha from "../../Assets/khalipha.png";
 
 import "./project.css";
 
@@ -108,6 +109,7 @@ const Project = () => (
     <Box cname="flex">
       <Box cname="khalipha">
         <ProjectInfo
+        img={khalipha}
           title="Khalipha"
           ptag={firstP}
           href={"https://khalipha.herokuapp.com/"}
