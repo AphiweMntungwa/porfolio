@@ -58,6 +58,7 @@ const Profile = () => (
             position="left"
             trigger="mouseenter"
             arrow={true}
+            distance={5}
           >
             <ProfileImage />
           </Tooltip>

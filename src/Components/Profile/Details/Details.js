@@ -23,6 +23,7 @@ const Details = () => (
       position="top"
       trigger="click"
       arrow={true}
+      distance={5}
     >
       <b
         style={{
