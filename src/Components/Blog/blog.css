@@ -18,10 +18,3 @@
     box-shadow: 0 0 4px gold;
     margin-top: 0.5em;
 }
-
-@media (max-width: 810px) {
-    .blog {
-        width: 100%;
-        min-height: 100vh;
-    }
-}

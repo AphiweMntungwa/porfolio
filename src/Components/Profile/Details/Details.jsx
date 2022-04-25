@@ -5,7 +5,7 @@ import "react-tippy/dist/tippy.css";
 import dyr from "../../../Assets/dyr.gif";
 
 const Details = () => (
-  <p className="my-par">
+  <div className="my-par">
     Welcome to my personal website where you can... see more information about
     me; for whatever reason that may be. I 'm a javaScript web developer,
     utilising javaScript libraries and frameworks to implement the client-server model
@@ -35,7 +35,7 @@ const Details = () => (
         class components.{" "}
       </b>{" "}
     </Tooltip>{" "}
-  </p>
+  </div>
 );
 
 export default Details;
