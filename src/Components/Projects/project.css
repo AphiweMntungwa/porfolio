@@ -4,13 +4,8 @@
     flex-grow: 1;
 }
 
-.snit-parag {
-    width: 92%;
-    color: #a9a9a9;
-}
-
 .p-header {
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: Roboto Mono;
     text-align: center;
 }
@@ -52,7 +47,7 @@
 }
 
 .khalipha:hover .small-width-links box-icon {
-    fill: rgb(17, 28, 35);
+    background-color: black;
 }
 
 .snitcher-app:hover .name {
@@ -75,9 +70,6 @@
     .snitcher-server {
         width: 36vw;
     }
-    /* .project {
-        width: 100%;
-    } */
 }
 
 @media (max-width: 530px) {

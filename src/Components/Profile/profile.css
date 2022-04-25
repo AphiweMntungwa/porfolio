@@ -1,6 +1,7 @@
 .profile {
     background-color: #2c2b23;
     width: fit-content;
+    min-height: 101vh;
 }
 
 .profile-box {

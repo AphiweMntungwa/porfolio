@@ -18,9 +18,10 @@ const styleprop = {
     { id: 4, int: "Node.js " },
     { id: 5, int: "MongoDB" },
     { id: 6, int: "HTML CSS" },
-    { id: 7, int: "Philosophy" },
+    { id: 7, int: "Git & NPM" },
     { id: 8, int: "Learning" },
-    { id: 9, int: "Problem Solving" },
+    { id: 9, int: "Philosophy" },
+    { id: 10, int: "Problem Solving" },
   ],
   title: "Interests",
 };

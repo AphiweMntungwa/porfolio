@@ -19,19 +19,8 @@ class ReadButton extends Component {
 
   render() {
     return (
-      <div style={{ width: "100%" }} className='read-button' >
-        <button
-          onClick={this.toggleParagraph}
-          style={{
-            width: "100%",
-            border: "none",
-            padding: "2%",
-            color: "orangered",
-            fontFamily: "Monospace",
-            fontWeight: 900,
-            fontSize: "larger",
-          }}
-        >
+      <div style={{ width: "100%" }} className="read-button">
+        <button onClick={this.toggleParagraph}>
           Read {this.state.moreOrLess}
         </button>
         {this.returnParagraph()}

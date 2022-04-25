@@ -15,7 +15,6 @@ const about = () => {
         <Quote />
       </Box>
       <Box cname='par-box'>
-        <h4 className="p-header">Objective</h4>
         <p className="aboutdet">
           Developing 'learning' as a discipline
           through studying my own learning experiences, then applying

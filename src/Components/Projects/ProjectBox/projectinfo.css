@@ -18,10 +18,33 @@
 
 .snit-parag,
 .portf-parag {
-    font-family: 'Lucida Sans Unicode';
+    font-family: Poppins;
+}
+
+.snit-parag {
+    width: 92%;
+    color: #83750f;
+    font-weight: 600;
 }
 
 .small-width-links {
     width: 4.5em;
     animation: unset;
+    background-color: black;
+}
+
+.read-button button {
+    color: orangered;
+    font-family: Monospace;
+    font-weight: 900;
+    font-size: larger;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: #9e80a338;
+}
+
+.read-button>button:focus {
+    border: 1px solid rgb(1, 12, 0);
 }

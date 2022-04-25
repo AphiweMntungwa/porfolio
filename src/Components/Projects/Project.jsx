@@ -22,6 +22,9 @@ const customBox = {
   border: "none",
 };
 
+const khaliphaPar = `khalipha is a prototype for a data visualisation platform for 
+countries and their constituencies. It utilises chart.js for data visualisation, Redux 
+for state management and has easily reusable React components.`;
 const firstP = ` 
   Snitcher is a platform where you can post thoughts and attach resources
   like youtube videos on your posts to make a playlist for your post.`;
@@ -34,6 +37,7 @@ const snitServer = `This is the Node back-end for the restructured snitcher app.
 Smitcher version with new featires like profile images for users, http chat application and a upvoting
 and downvoting sytem for both posts and comments on posts`;
 
+const title = "Technical Features"
 const snitcherTech = {
   list: [
     { id: 1, int: "Node.js" },
@@ -43,8 +47,9 @@ const snitcherTech = {
     { id: 5, int: "AJAX" },
     { id: 6, int: "M-V-C pattern" },
     { id: 7, int: "Moongoose" },
+    { id: 8, int: "Responsive" },
   ],
-  title: "Technical Features",
+  title
 };
 const portfolioTech = {
   list: [
@@ -52,8 +57,22 @@ const portfolioTech = {
     { id: 2, int: "HTML" },
     { id: 3, int: "CSS" },
     { id: 4, int: "Fetch API" },
+    { id: 5, int: "Responsive" },
   ],
-  title: "Technical Features",
+  title
+};
+const khalTech = {
+  list: [
+    { id: 1, int: "React" },
+    { id: 2, int: "Redux" },
+    { id: 3, int: "Chart.js" },
+    { id: 4, int: "Axios" },
+    { id: 5, int: "Bootstrap" },
+    { id: 6, int: "REST" },
+    { id: 7, int: "Express & Mongo" },
+    { id: 8, int: "Responsive" },
+  ],
+  title
 };
 const snitReactTech = {
   list: [
@@ -62,20 +81,28 @@ const snitReactTech = {
     { id: 3, int: "CSS" },
     { id: 4, int: "Axios" },
     { id: 5, int: "Bootstrap" },
+    { id: 6, int: "Responsive" },
   ],
-  title: "Technical Features",
+  title
 };
 const snitBackTech = {
   list: [
     { id: 1, int: "NodeJS" },
     { id: 2, int: "MongoDB" },
-    { id: 3, int: "ExpressJs" },
+    { id: 3, int: "Express" },
     { id: 4, int: "Axios" },
     { id: 5, int: "Cloudinary" },
   ],
-  title: "Technical Features",
+  title
 };
 
+const khal = (
+  <p>
+    It also utilises and express server and a mongoDB database,
+    Mongoose data modelling is also easily scalable to cater for large amounts 
+    of data.
+  </p>
+)
 const snitParag = (
   <p className="snit-parag">
     Snitcher was my first foray into full stack web development. It was an
@@ -109,13 +136,13 @@ const Project = () => (
     <Box cname="flex">
       <Box cname="khalipha">
         <ProjectInfo
-        img={khalipha}
+          img={khalipha}
           title="Khalipha"
-          ptag={firstP}
+          ptag={khaliphaPar}
           href={"https://khalipha.herokuapp.com/"}
           text=""
-          styleprop={snitcherTech}
-          paragraph={snitParag}
+          styleprop={khalTech}
+          paragraph={khal}
           github="https://github.com/AphiweMntungwa/khalipha"
         />
       </Box>

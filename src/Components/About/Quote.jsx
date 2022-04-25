@@ -32,7 +32,7 @@ class Quote extends Component {
   }
 
   render() {
-    return <h4 className="p-header">{this.state.headerLetters}</h4>;
+    return <h4 className="about-quote">{this.state.headerLetters}</h4>;
   }
 }
 

@@ -22,3 +22,15 @@ body {
         overflow-x: hidden;
     }
 }
+
+::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(193, 183, 165);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(180, 60%, 10%);
+}

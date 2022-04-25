@@ -39,10 +39,9 @@ const socialLinks = [
     name: "linkedin",
   },
   { link: "https://facebook.com/AphiweMntungwa", name: "facebook" },
-  { link: "tel:0765881859", name: "phone", noLogo:true },
+  { link: "tel:0765881859", name: "phone", noLogo: true },
   { link: "mailto:aphiwemntungwa66@gmail.com", name: "gmail" },
 ];
-
 
 const Profile = () => (
   <div className="profile">
@@ -51,9 +50,9 @@ const Profile = () => (
         <Box cname="profile-box">
           <Tooltip
             html={
-              <h4 style={{ color: "wheat", fontFamily: "Poppins" }}>
-                It was a G.I jane joke!
-              </h4>
+              <h5 style={{ color: "wheat", fontFamily: "Poppins" }}>
+                adult human male, age:22
+              </h5>
             }
             position="left"
             trigger="mouseenter"
