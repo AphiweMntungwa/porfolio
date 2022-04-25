@@ -13,7 +13,7 @@ class ReadButton extends Component {
   };
   returnParagraph = () => {
     return this.state.readMore ? (
-      <p className="snit-parag">{this.props.paragraph}</p>
+      <div className="snit-parag">{this.props.paragraph}</div>
     ) : null;
   };
 
