@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import aphiwe from "../../Assets/aphiwe-mntungwa.jpg";
-import aphiweM from "../../Assets/aps.jpg";
+import aphiweM from "../../Assets/aps.png";
 import aphiweMn from "../../Assets/newimage.jpg";
-import aphiweMnt from "../../Assets/aphiweMntungwa.jpg";
-import aphiweMntu from "../../Assets/sphelele.jpg";
+import aphiweMnt from "../../Assets/aphiweMntungwa.png";
+import aphiweMntu from "../../Assets/sphelele.png";
 import Box from "../BoxComponent/BoxComponent";
 
 const style = {
@@ -26,7 +26,7 @@ class ProfileImage extends Component {
     let i = 0;
     const interval = setInterval(() => {
       this.setState({ link: this.state.links[i] });
-      i < 3 ? (i += 1) : (i = 0);
+      i < 4 ? (i += 1) : (i = 0);
     }, 3000);
     this.setState({ int: interval });
   }

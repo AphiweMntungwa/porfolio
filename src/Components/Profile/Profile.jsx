@@ -51,7 +51,7 @@ const Profile = () => (
           <Tooltip
             html={
               <h5 style={{ color: "wheat", fontFamily: "Poppins" }}>
-                adult human male, age:22
+                Human male, age:22
               </h5>
             }
             position="left"
