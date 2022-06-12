@@ -150,11 +150,11 @@ const Project = () => (
         <ProjectInfo
           title="Snitcher"
           ptag={snitReactParag}
-          href="https://snitcher-server.herokuapp.com"
+          href={"https://snitcherapp.herokuapp.com/"}
           text=""
           styleprop={snitReactTech}
           paragraph={snitcherReact}
-          github="https://github.com/AphiweMntungwa/snitcherReact"
+          github="https://github.com/AphiweMntungwa/Snitcher"
         />
       </Box>
       <Box cname="portfolio-app">
@@ -174,11 +174,11 @@ const Project = () => (
           img={snitcher}
           title="Deprecated Snitcher"
           ptag={firstP}
-          href={"https://snitcherapp.herokuapp.com/"}
+          href="https://snitcher-server.herokuapp.com"
           text=""
           styleprop={snitcherTech}
           paragraph={snitParag}
-          github="https://github.com/AphiweMntungwa/Snitcher"
+          github="https://github.com/AphiweMntungwa/snitcherReact"
         />
       </Box>
 
