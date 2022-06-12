@@ -3,14 +3,13 @@ import Box from "../BoxComponent/BoxComponent";
 import ReadButton from "../Projects/ProjectBox/ReadButton";
 import "./blog.css";
 import blogs from "./blogs";
-// import HorizontalScroll from "react-horizontal-scrolling";
-// import one from '../../Assets/1.png'
-// import two from '../../Assets/2.png'
-// import three from '../../Assets/3.png'
-// import four from '../../Assets/4.png'
-// import five from '../../Assets/5.png'
+import one from "../../Assets/1.png";
+import two from "../../Assets/2.png";
+import three from "../../Assets/3.png";
+import four from "../../Assets/4.png";
+import five from "../../Assets/5.png";
 
-// const pictures = [one, two, three, four, five]
+const pictures = [two, one, three, four, five];
 
 const Blog = () => {
   return (
@@ -18,11 +17,15 @@ const Blog = () => {
       <Box cname="blog-header">
         <h4 className="p-header">Blog </h4>
       </Box>
-      {/* <HorizontalScroll>
-        {pictures.map((pic, idx) => (
-          <img className="object-cover" src={pic} key={idx} />
-        ))}
-      </HorizontalScroll> */}
+      <Box cname="slider">
+        <div className="slide-track">
+          {pictures.map((el) => (
+            <div className="img-slide" key={el}>
+              <img src={el} />
+            </div>
+          ))}
+        </div>
+      </Box>
       <Box cname="blog-second-header">
         <h4 className="p-header">Blog init...</h4>
         <ReadButton paragraph={blogs.firstPar} />

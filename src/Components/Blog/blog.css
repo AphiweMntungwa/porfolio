@@ -19,7 +19,29 @@
     margin-top: 0.5em;
 }
 
-.object-cover {
-    width: 5pc;
-    height: 5pc;
+div.slider {
+    overflow: hidden;
+    margin-top: 2%;
+    max-width: 70vw;
+}
+
+.slider .slide-track {
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+    animation: scroll 6s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-40%)
+    }
+}
+
+.slider img {
+    width: 3.5pc;
+    height: 3pc;
 }
