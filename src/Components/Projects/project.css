@@ -31,10 +31,23 @@
     background-size: cover;
 }
 
+.snitcherReact:hover {
+    background-image: url('../../Assets/snitcher_screen.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .khalipha:hover .icon-box,
 .khalipha:hover .snitcherinfo,
 .khalipha:hover .app-image,
 .khalipha:hover .app-image+h4 {
+    opacity: 0;
+}
+
+.snitcherReact:hover .icon-box,
+.snitcherReact:hover .snitcherinfo,
+.snitcherReact:hover .app-image,
+.snitcherReact:hover .app-image+h4 {
     opacity: 0;
 }
 

@@ -30,14 +30,11 @@ const firstP = `
   like youtube videos on your posts to make a playlist for your post.`;
 const secondP = `This is my static Portfolio app made of React, it does not proxy 
 any backend server.`;
-const snitReactParag = `This is the react front-end for the restructured snitcher app. The old Snitcher
-kept both front and back end on the same server and didn't use react. This new interface is connected 
-to the snitcher server which also deployed on heroku on a different server.`;
-const snitServer = `This is the Node back-end for the restructured snitcher app. It improves on the old
-Smitcher version with new featires like profile images for users, http chat application and a upvoting
-and downvoting sytem for both posts and comments on posts`;
+const snitServer = `Just an old dead version. Nothing here...`;
+const snitReactParag = `Snitcher is a social platform where you can attach youTube Playlits
+to your posts,`;
 
-const title = "Technical Features"
+const title = "Technical Features";
 const snitcherTech = {
   list: [
     { id: 1, int: "Node.js" },
@@ -49,7 +46,7 @@ const snitcherTech = {
     { id: 7, int: "Moongoose" },
     { id: 8, int: "Responsive" },
   ],
-  title
+  title,
 };
 const portfolioTech = {
   list: [
@@ -59,7 +56,7 @@ const portfolioTech = {
     { id: 4, int: "Fetch API" },
     { id: 5, int: "Responsive" },
   ],
-  title
+  title,
 };
 const khalTech = {
   list: [
@@ -72,56 +69,46 @@ const khalTech = {
     { id: 7, int: "Express & Mongo" },
     { id: 8, int: "Responsive" },
   ],
-  title
+  title,
 };
 const snitReactTech = {
   list: [
-    { id: 1, int: "ReactJS" },
-    { id: 2, int: "HTML" },
-    { id: 3, int: "CSS" },
-    { id: 4, int: "Axios" },
-    { id: 5, int: "Bootstrap" },
-    { id: 6, int: "Responsive" },
+    { id: 1, int: "React" },
+    { id: 2, int: "Redux" },
+    { id: 3, int: "SCSS" },
+    { id: 4, int: "Bootstrap" },
+    { id: 5, int: "Ajax" },
+    { id: 7, int: "Responsive" },
+    { id: 8, int: "Express" },
+    { id: 9, int: "MongoDB" },
+    { id: 10, int: "Express" },
+    { id: 11, int: "Cloudinary" },
   ],
-  title
+  title,
 };
 const snitBackTech = {
-  list: [
-    { id: 1, int: "NodeJS" },
-    { id: 2, int: "MongoDB" },
-    { id: 3, int: "Express" },
-    { id: 4, int: "Axios" },
-    { id: 5, int: "Cloudinary" },
-  ],
-  title
+  list: [],
+  title,
 };
 
 const khal = (
   <p>
-    It also utilises and express server and a mongoDB database,
-    Mongoose data modelling is also easily scalable to cater for large amounts 
-    of data.
+    It also utilises and express server and a mongoDB database, Mongoose data
+    modelling is also easily scalable to cater for large amounts of data.
   </p>
-)
+);
 const snitParag = (
-  <p className="snit-parag">
-    Snitcher was my first foray into full stack web development. It was an
-    attempt to make a dynamic social network and it is without a javaScript
-    framework like React which made it painful to update the UI imperatively
-    based on user interaction. In the future i hope to make a React UI to proxy
-    Snitcher's backend.
-  </p>
+  <p className="snit-parag">why are you still here? go home.</p>
 );
 
 const portfParag = (
   <p className="portf-parag">
-    I plan to build a server for my portfolio for more functionality if the need
-    arises.
+    Updating this app means writing class components.
   </p>
 );
 const snitcherReact = (
   <p className="snitcherParaReact">
-    Both servers are deployed in heroku servers.
+   Feautures profile pictures and http chat messaging.
   </p>
 );
 const snitServerParag = (
@@ -179,18 +166,6 @@ const Project = () => (
           styleprop={snitcherTech}
           paragraph={snitParag}
           github="https://github.com/AphiweMntungwa/snitcherReact"
-        />
-      </Box>
-
-      <Box cname="snitcher-server">
-        <ProjectInfo
-          title="Snitcher Backend Server"
-          ptag={snitServer}
-          href=""
-          text=""
-          styleprop={snitBackTech}
-          paragraph={snitServerParag}
-          github="https://github.com/AphiweMntungwa/Snitcher"
         />
       </Box>
     </Box>
