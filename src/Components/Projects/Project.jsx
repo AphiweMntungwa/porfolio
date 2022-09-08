@@ -4,6 +4,7 @@ import { boxStyles } from "../Profile/Profile";
 import ProjectInfo from "./ProjectBox/ProjectInfo";
 import snitcher from "../../Assets/snitcher.jpg";
 import khalipha from "../../Assets/khalipha.png";
+import morabaraba from "../../Assets/morabaraba.png";
 
 import "./project.css";
 
@@ -30,7 +31,10 @@ const firstP = `
   like youtube videos on your posts to make a playlist for your post.`;
 const secondP = `This is my static Portfolio app made of React, it does not proxy 
 any backend server.`;
-const snitServer = `Just an old dead version. Nothing here...`;
+const mlabalabaPar = `Morabaraba is an ancient board game. It is a traditional African game, 
+but people all over the world play it. Herders developed morabaraba centuries ago. 
+It probably developed from an ancient Egyptian game. That game was called mancala. 
+A morabaraba board that is 800 years old was found in Mapungubwe, South Africa.`;
 const snitReactParag = `Snitcher is a social platform where you can attach youTube Playlits
 to your posts,`;
 
@@ -86,8 +90,16 @@ const snitReactTech = {
   ],
   title,
 };
-const snitBackTech = {
-  list: [],
+const mlabaTech = {
+  list: [
+    { id: 1, int: "React" },
+    { id: 2, int: "Redux" },
+    { id: 3, int: "SVG" },
+    { id: 4, int: "OOP" },
+    { id: 5, int: "SCSS" },
+    { id: 6, int: "Bootstrap" },
+    { id: 7, int: "Responsive" },
+  ],
   title,
 };
 
@@ -108,11 +120,13 @@ const portfParag = (
 );
 const snitcherReact = (
   <p className="snitcherParaReact">
-   Feautures profile pictures and http chat messaging.
+    Feautures profile pictures and http chat messaging.
   </p>
 );
-const snitServerParag = (
-  <p className="snitServerParag">Snitcher back end server deployed on heroku</p>
+const mlabalabaParag = (
+  <p className="mlabalabaParag">
+    Game uses SVG for display of board and movements across the board.
+  </p>
 );
 
 const Project = () => (
@@ -131,6 +145,18 @@ const Project = () => (
           styleprop={khalTech}
           paragraph={khal}
           github="https://github.com/AphiweMntungwa/khalipha"
+        />
+      </Box>
+      <Box cname="mlabalaba">
+        <ProjectInfo
+          img={morabaraba}
+          title="Mlabalaba"
+          ptag={mlabalabaPar}
+          href={"https://mlabalaba.co.za"}
+          text=""
+          styleprop={mlabaTech}
+          paragraph={mlabalabaParag}
+          github="https://github.com/AphiweMntungwa/mlabalaba"
         />
       </Box>
       <Box cname="snitcherReact">

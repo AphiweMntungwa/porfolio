@@ -37,10 +37,23 @@
     background-size: cover;
 }
 
+.mlabalaba:hover {
+    background-image: url('../../Assets/labane.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .khalipha:hover .icon-box,
 .khalipha:hover .snitcherinfo,
 .khalipha:hover .app-image,
 .khalipha:hover .app-image+h4 {
+    opacity: 0;
+}
+
+.mlabalaba:hover .icon-box,
+.mlabalaba:hover .snitcherinfo,
+.mlabalaba:hover .app-image,
+.mlabalaba:hover .app-image+h4 {
     opacity: 0;
 }
 
@@ -80,7 +93,8 @@
     .snitcher-app,
     .portfolio-app,
     .snitcherReact,
-    .snitcher-server {
+    .snitcher-server,
+    .mlabalaba {
         width: 36vw;
     }
 }
@@ -94,7 +108,8 @@
     .snitcher-app,
     .portfolio-app,
     .snitcherReact,
-    .snitcher-server {
+    .snitcher-server,
+    .mlabalaba {
         width: 80%;
         border: none;
     }
