@@ -39,7 +39,7 @@ const socialLinks = [
     name: "linkedin",
   },
   { link: "https://facebook.com/AphiweMntungwa", name: "facebook" },
-  { link: "tel:0765881859", name: "phone", noLogo: true },
+  { link: "tel:0607759253", name: "phone", noLogo: true },
   { link: "mailto:aphiwemntungwa66@gmail.com", name: "gmail" },
 ];
 
@@ -51,7 +51,7 @@ const Profile = () => (
           <Tooltip
             html={
               <h5 style={{ color: "wheat", fontFamily: "Poppins" }}>
-                Human male, age:24
+                Human male, age: {new Date().getFullYear() - 2000}
               </h5>
             }
             position="left"
