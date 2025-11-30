@@ -1,201 +1,131 @@
-import React, { Component } from "react";
-import Box from "../BoxComponent/BoxComponent";
-import { boxStyles } from "../Profile/Profile";
-import ProjectInfo from "./ProjectBox/ProjectInfo";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+
+// Import images if they exist, otherwise use placeholders or just text
+// Assuming assets are still in the same place, but I might need to adjust paths if I moved things.
+// Based on previous file structure: ../../Assets/snitcher.jpg
 import snitcher from "../../Assets/snitcher.jpg";
 import khalipha from "../../Assets/khalipha.png";
 import morabaraba from "../../Assets/morabaraba.png";
 
-import "./project.css";
+const projectsData = [
+  {
+    title: "Khalipha",
+    description: "Khalipha is a prototype for a data visualisation platform for countries and their constituencies. It utilises chart.js for data visualisation, Redux for state management and has easily reusable React components.",
+    tech: ["React", "Redux", "Chart.js", "Axios", "Bootstrap", "REST", "Express & Mongo"],
+    link: "https://khalipha.herokuapp.com/",
+    github: "https://github.com/AphiweMntungwa/khalipha",
+    image: khalipha
+  },
+  {
+    title: "Mlabalaba",
+    description: "Morabaraba is an ancient board game. It is a traditional African game, but people all over the world play it. The game uses SVG for display of board and movements across the board.",
+    tech: ["React", "Redux", "SVG", "OOP", "SCSS", "Bootstrap"],
+    link: "https://mlabalaba.netlify.app/",
+    github: "https://github.com/AphiweMntungwa/mlabalaba",
+    image: morabaraba
+  },
+  {
+    title: "Snitcher",
+    description: "Snitcher is a social platform where you can attach YouTube Playlists to your posts. Features profile pictures and http chat messaging.",
+    tech: ["React", "Redux", "SCSS", "Bootstrap", "Ajax", "Express", "MongoDB", "Cloudinary"],
+    link: "https://snitcherapp.herokuapp.com/",
+    github: "https://github.com/AphiweMntungwa/Snitcher",
+    image: null // No image in original for this one? Original had 'snitcherReact' box but no image import used there? 
+    // Wait, original code: <ProjectInfo ... img={snitcher} ... /> was for "Deprecated Snitcher".
+    // "Snitcher" (new) didn't have an image prop passed in the original code (Step 27, line 163).
+  },
+  {
+    title: "Portfolio",
+    description: "This is my static Portfolio app made of React. Updating this app means writing class components (well, not anymore!).",
+    tech: ["React Application", "HTML", "CSS", "Fetch API", "Responsive"],
+    link: "",
+    github: "https://github.com/AphiweMntungwa/porfolio",
+    image: null
+  },
+  {
+    title: "Deprecated Snitcher",
+    description: "Snitcher is a platform where you can post thoughts and attach resources like youtube videos on your posts to make a playlist for your post.",
+    tech: ["Node.js", "RESTful", "HTML, CSS & VanillaJs", "Bootstrap", "AJAX", "M-V-C pattern", "Moongoose"],
+    link: "https://snitcher-server.herokuapp.com",
+    github: "https://github.com/AphiweMntungwa/snitcherReact",
+    image: snitcher
+  }
+];
 
-const { topBoxStyle, smallBoxStyle } = boxStyles;
-const customBox = {
-  position: "relative",
-  display: "flex",
-  justifyContent: "space-between",
-  flexWrap: "wrap",
-  left: "26%",
-  top: "131px",
-  minHeight: "22%",
-  height: "fit-content",
-  padding: "1.2%",
-  boxShadow: "none",
-  border: "none",
+const ProjectCard = ({ project, index }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1
+  });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ delay: index * 0.1, duration: 0.5 }}
+      style={{
+        background: 'rgba(255, 255, 255, 0.05)',
+        borderRadius: '20px',
+        overflow: 'hidden',
+        backdropFilter: 'blur(10px)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%'
+      }}
+    >
+      {project.image && (
+        <div style={{ height: '200px', overflow: 'hidden' }}>
+          <img src={project.image} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </div>
+      )}
+      <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#4facfe' }}>{project.title}</h3>
+        <p style={{ marginBottom: '1.5rem', color: '#ccc', lineHeight: '1.6' }}>{project.description}</p>
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
+          {project.tech.map((t, i) => (
+            <span key={i} style={{ fontSize: '0.8rem', padding: '0.3rem 0.8rem', borderRadius: '20px', background: 'rgba(255,255,255,0.1)', color: '#fff' }}>
+              {t}
+            </span>
+          ))}
+        </div>
+
+        <div style={{ marginTop: 'auto', display: 'flex', gap: '1rem' }}>
+          {project.github && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'white', textDecoration: 'none' }}>
+              <FaGithub /> Code
+            </a>
+          )}
+          {project.link && (
+            <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#4facfe', textDecoration: 'none' }}>
+              <FaExternalLinkAlt /> Live Demo
+            </a>
+          )}
+        </div>
+      </div>
+    </motion.div>
+  );
 };
 
-const khaliphaPar = `khalipha is a prototype for a data visualisation platform for 
-countries and their constituencies. It utilises chart.js for data visualisation, Redux 
-for state management and has easily reusable React components.`;
-const firstP = ` 
-  Snitcher is a platform where you can post thoughts and attach resources
-  like youtube videos on your posts to make a playlist for your post.`;
-const secondP = `This is my static Portfolio app made of React, it does not proxy 
-any backend server.`;
-const mlabalabaPar = `Morabaraba is an ancient board game. It is a traditional African game, 
-but people all over the world play it. Herders developed morabaraba centuries ago. 
-It probably developed from an ancient Egyptian game. That game was called mancala. 
-A morabaraba board that is 800 years old was found in Mapungubwe, South Africa.`;
-const snitReactParag = `Snitcher is a social platform where you can attach youTube Playlits
-to your posts,`;
+const Projects = () => {
+  return (
+    <section id="projects" style={{ padding: '6rem 2rem', background: '#0a0a0a', color: 'white' }}>
+      <h2 style={{ fontSize: '3rem', marginBottom: '4rem', textAlign: 'center', background: 'linear-gradient(to right, #4facfe 0%, #00f2fe 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+        Featured Projects
+      </h2>
 
-const title = "Technical Features";
-const snitcherTech = {
-  list: [
-    { id: 1, int: "Node.js" },
-    { id: 2, int: "RESTful" },
-    { id: 3, int: "HTML, CSS & VanillaJs" },
-    { id: 4, int: "Bootstrap" },
-    { id: 5, int: "AJAX" },
-    { id: 6, int: "M-V-C pattern" },
-    { id: 7, int: "Moongoose" },
-    { id: 8, int: "Responsive" },
-  ],
-  title,
-};
-const portfolioTech = {
-  list: [
-    { id: 1, int: "React Application" },
-    { id: 2, int: "HTML" },
-    { id: 3, int: "CSS" },
-    { id: 4, int: "Fetch API" },
-    { id: 5, int: "Responsive" },
-  ],
-  title,
-};
-const khalTech = {
-  list: [
-    { id: 1, int: "React" },
-    { id: 2, int: "Redux" },
-    { id: 3, int: "Chart.js" },
-    { id: 4, int: "Axios" },
-    { id: 5, int: "Bootstrap" },
-    { id: 6, int: "REST" },
-    { id: 7, int: "Express & Mongo" },
-    { id: 8, int: "Responsive" },
-  ],
-  title,
-};
-const snitReactTech = {
-  list: [
-    { id: 1, int: "React" },
-    { id: 2, int: "Redux" },
-    { id: 3, int: "SCSS" },
-    { id: 4, int: "Bootstrap" },
-    { id: 5, int: "Ajax" },
-    { id: 7, int: "Responsive" },
-    { id: 8, int: "Express" },
-    { id: 9, int: "MongoDB" },
-    { id: 10, int: "Express" },
-    { id: 11, int: "Cloudinary" },
-  ],
-  title,
-};
-const mlabaTech = {
-  list: [
-    { id: 1, int: "React" },
-    { id: 2, int: "Redux" },
-    { id: 3, int: "SVG" },
-    { id: 4, int: "OOP" },
-    { id: 5, int: "SCSS" },
-    { id: 6, int: "Bootstrap" },
-    { id: 7, int: "Responsive" },
-  ],
-  title,
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
+        {projectsData.map((project, index) => (
+          <ProjectCard key={index} project={project} index={index} />
+        ))}
+      </div>
+    </section>
+  );
 };
 
-const khal = (
-  <p>
-    It also utilises and express server and a mongoDB database, Mongoose data
-    modelling is also easily scalable to cater for large amounts of data.
-  </p>
-);
-const snitParag = (
-  <p className="snit-parag">why are you still here? go home.</p>
-);
-
-const portfParag = (
-  <p className="portf-parag">
-    Updating this app means writing class components.
-  </p>
-);
-const snitcherReact = (
-  <p className="snitcherParaReact">
-    Feautures profile pictures and http chat messaging.
-  </p>
-);
-const mlabalabaParag = (
-  <p className="mlabalabaParag">
-    Game uses SVG for display of board and movements across the board.
-  </p>
-);
-
-const Project = () => (
-  <div className="project">
-    <Box cname="header-projects">
-      <h4 className="p-header">Projects</h4>
-    </Box>
-    <Box cname="flex">
-      <Box cname="khalipha">
-        <ProjectInfo
-          img={khalipha}
-          title="Khalipha"
-          ptag={khaliphaPar}
-          href={"https://khalipha.herokuapp.com/"}
-          text=""
-          styleprop={khalTech}
-          paragraph={khal}
-          github="https://github.com/AphiweMntungwa/khalipha"
-        />
-      </Box>
-      <Box cname="mlabalaba">
-        <ProjectInfo
-          img={morabaraba}
-          title="Mlabalaba"
-          ptag={mlabalabaPar}
-          href={"https://mlabalaba.co.za"}
-          text=""
-          styleprop={mlabaTech}
-          paragraph={mlabalabaParag}
-          github="https://github.com/AphiweMntungwa/mlabalaba"
-        />
-      </Box>
-      <Box cname="snitcherReact">
-        <ProjectInfo
-          title="Snitcher"
-          ptag={snitReactParag}
-          href={"https://snitcherapp.herokuapp.com/"}
-          text=""
-          styleprop={snitReactTech}
-          paragraph={snitcherReact}
-          github="https://github.com/AphiweMntungwa/Snitcher"
-        />
-      </Box>
-      <Box cname="portfolio-app">
-        <ProjectInfo
-          title="Porfolio"
-          ptag={secondP}
-          href=""
-          text=""
-          styleprop={portfolioTech}
-          paragraph={portfParag}
-          github="https://github.com/AphiweMntungwa/porfolio"
-        />
-      </Box>
-
-      <Box cname="snitcher-app">
-        <ProjectInfo
-          img={snitcher}
-          title="Deprecated Snitcher"
-          ptag={firstP}
-          href="https://snitcher-server.herokuapp.com"
-          text=""
-          styleprop={snitcherTech}
-          paragraph={snitParag}
-          github="https://github.com/AphiweMntungwa/snitcherReact"
-        />
-      </Box>
-    </Box>
-  </div>
-);
-
-export default Project;
+export default Projects;
