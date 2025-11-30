@@ -2,7 +2,7 @@
     "name": "porfolio",
     "version": "0.1.0",
     "engines": {
-        "node": "14.17.6"
+        "node": ">=18"
     },
     "private": true,
     "dependencies": {
