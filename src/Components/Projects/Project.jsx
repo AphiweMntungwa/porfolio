@@ -12,6 +12,14 @@ import morabaraba from "../../Assets/morabaraba.png";
 
 const projectsData = [
   {
+    title: "Reshub",
+    description: "An integrated system featuring a Next.js client with TypeScript, instant messaging via WebSockets, and Material UI. The backend utilizes a .NET server for core logic and Node.js for network-intensive tasks like posts and real-time communication.",
+    tech: ["Next.js", "TypeScript", "WebSockets", "Material UI", ".NET Core", "Node.js", "Microservices"],
+    link: "", // No link provided
+    github: "", // No github provided
+    image: null
+  },
+  {
     title: "Khalipha",
     description: "Khalipha is a prototype for a data visualisation platform for countries and their constituencies. It utilises chart.js for data visualisation, Redux for state management and has easily reusable React components.",
     tech: ["React", "Redux", "Chart.js", "Axios", "Bootstrap", "REST", "Express & Mongo"],
