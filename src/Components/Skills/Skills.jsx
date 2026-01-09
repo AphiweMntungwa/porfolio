@@ -24,7 +24,7 @@ const skillsData = [
     { name: 'NumPy', icon: SiNumpy, color: '#013243' },
     { name: 'Scikit-Learn', icon: SiScikitlearn, color: '#F7931E' },
     { name: 'Microservices', icon: FaNetworkWired, color: '#ff9900' },
-    { name: 'Integrated Systems', icon: FaCogs, color: '#cccccc' },
+    { name: 'Distributed Systems', icon: FaCogs, color: '#cccccc' },
     { name: 'Git', icon: SiGit, color: '#F05032' },
     { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
 ];
